@@ -1,0 +1,32 @@
+@*@model Microsoft.EntityFrameworkCore.DbSet<Persona>*@
+    @using Microsoft.EntityFrameworkCore;
+    @{
+        ViewData["Title"] = "Home page";
+    };
+    <div class="text-center">
+        <h1 class = "display-4">Persone</h1>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Cognome</th>
+            </tr>
+            <tbody>@foreach (Persona P in Model)
+                {
+                    <tr>
+                        <td>@P.Id</td>
+                        <TD>@P.Nome</TD>
+                        <TD>@P.Cognome</TD>
+                    </tr>
+                }
+                </tbody>
+                <TR>
+                    <TH>Id1</TH>
+                    <th>Luca</th>
+                    <th>Rozzi</th>
+                </TR>
+            
+                
+            
+        </table>
+    </div>
